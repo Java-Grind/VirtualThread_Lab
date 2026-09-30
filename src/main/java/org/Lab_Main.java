@@ -4,7 +4,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.concurrent.Executors;
 
-public class Main {
+public class Lab_Main {
     private static final int NUMBER_OF_TASKS = 100_000;
     private static final int POOL_SIZE = 1_000;
 
@@ -14,7 +14,7 @@ public class Main {
 
         try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
             for (int i = 0; i < NUMBER_OF_TASKS; i++) {
-                executor.submit(Main::fakeHttpRequest);
+                executor.submit(Lab_Main::fakeHttpRequest);
             }
         }
 
