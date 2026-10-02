@@ -9,7 +9,7 @@ public class Lab_Main {
     private static final int POOL_SIZE = 1_000;
 
     static void main() {
-        System.out.println("Starting Main");
+        System.out.println("Starting Lab Main");
         Instant start = Instant.now();
 
         try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {

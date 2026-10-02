@@ -7,7 +7,7 @@ public class ThreadOutput_Main {
     private static final int TASKS = 12;
 
     public static void main(String[] args) {
-        System.out.println("Starting Main");
+        System.out.println("Starting Thread Output Main");
 
         try (ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor()) {
             for (int i = 0; i < TASKS; i++) {
